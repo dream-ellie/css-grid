@@ -1,0 +1,50 @@
+body {
+  padding: 1rem;
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  grid-gap: 1rem;
+  grid-template-areas:
+    'a a a'
+    'b c c'
+    'b d g'
+    'e f g';
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image1 {
+  grid-area: a;
+}
+
+.image2 {
+  grid-area: b;
+}
+
+.image3 {
+  grid-area: c;
+}
+
+.image4 {
+  grid-area: d;
+}
+
+.image5 {
+  grid-area: e;
+}
+
+.image6 {
+  grid-area: f;
+}
+
+.image7 {
+  grid-area: g;
+}

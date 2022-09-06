@@ -1,0 +1,57 @@
+body {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+header,
+main,
+aside,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+aside {
+  background-color: #ff9d00;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 100px auto 50px;
+  grid-template-areas:
+    'header header'
+    'main side'
+    'footer footer';
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: side;
+}
+
+footer {
+  grid-area: footer;
+}
